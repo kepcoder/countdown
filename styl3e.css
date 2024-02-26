@@ -1,0 +1,150 @@
+*{
+    box-sizing:border-box;
+    font-family:calibri;
+    padding:0;margin:0;
+    text-decoration:none;
+}
+html,body{
+    width:100vw;
+    height:100vh;
+}
+.main{
+    width:100vw;
+    height:100vh;
+}
+.tog-image{
+    width:100vw;
+    height:20vh;
+    background:url(top-image.png);
+    background-size:cover;
+}
+.main .container{
+    width:100%;
+    display:flex;
+    gap:2vw;
+}
+.text-container{
+    width:50%;
+    padding:2vw;
+    text-align:center;
+}
+.text-container h1{
+    font-size:3vw;
+    color:#6C63FF;
+    line-height:3;
+}
+.time-container p{
+    font-size:2vw;
+}
+span{
+    margin-top:2vw;
+    font-size:3vw;
+}
+.time-container .time{
+    font-size:5vw;
+}
+.text-container .time-container{
+display:flex;
+justify-content: center;
+}
+.text-container .time-container{
+display:flex;
+align-items: center;
+gap:2vw;
+}
+.text-container h3{
+    font-size:2vw;
+    font-weight:400;
+    line-height:2;
+    color:grey;
+}
+.text-container a{
+    background-color: #6C63FF;
+    padding:.5vw 2vw;
+    border-radius:10px;
+    font-size:1.5vw;  
+    text-align:center;
+    color:#FFFFFF;
+}
+.image-container{
+    width:50%;
+}
+.container .image-container{
+display:flex;
+justify-content: center;
+align-items: center;
+padding:2vw;
+overflow: hidden;
+}
+.container .image-container img{
+    width:90vmin;
+    animation: Slideup 3s ease-out 1 150s;
+}
+
+
+@keyframes Slideup {
+
+    0%{
+        transform:translateY(300px);
+        /* opacity:0 */
+    }
+    100%{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+
+
+
+/* Making Responsive  */
+
+
+@media only screen and (max-width:1250px){
+
+.container .image-container img{
+width:40vw;
+}
+
+@media only screen and (max-width:1000px){
+
+.main .container{
+    flex-direction: column;
+}
+.text-container{
+    width:100%;
+}
+.text-container h1{
+    font-size:10vmin;
+    line-height:1;
+}
+.text-container .time-container p{
+    font-size:5vw;
+}
+.image-container{
+    width:100%;
+}
+.container .image-container img{
+    width:90vw;
+}
+}
+
+}
+
+@media only screen and (max-width:600px){
+
+.image-container img{
+    width:80vw;
+}
+.container h3{
+    font-size:3vw;
+}
+.text-container .time-container p{
+    font-size:7vw;
+}
+.container a{
+    font-size:4vw;
+}
+
+}
+
